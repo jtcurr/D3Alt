@@ -75,13 +75,14 @@ function plot(params) {
 			.attr("y", function(d,i) {
 				return y(i)
 			})
+			//nudging x param
 			.attr("dx", -4)
 			//nudging y param
 			.attr("dy", function(d, i){
 				return y(1)/1.5+2;
 			})
 			.text(function(d,i) {
-				return d.value;
+				return d.key;
 			})
 }
 
